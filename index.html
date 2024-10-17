@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); login();">
+        <label for="f_uid">Username:</label>
+        <input type="text" name="f_uid" required>
+        <label for="f_pwd">Password:</label>
+        <input type="password" name="f_pwd" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <p id="err_msg" style="color: red;"></p>
+
+    <script>
+        // Function to handle login
+        const msg = queryStringToObject(window.location.search).msg 
+        const f_uid = queryStringToObject(window.location.search).f_uid;
+        if (msg) {
+          document.getElementById("err_msg").innerHTML = msg;
+        }
+        if(f_uid) {
+          document.getElementsByName("f_uid")[0].value = f_uid
+        }
+        function queryStringToObject(queryString) {
+          const pairs = queryString.substring(1).split('&');
+        
+          var array = pairs.map((el) => {
+            const parts = el.split('=');
+            return parts;
+          });
+        
+          return Object.fromEntries(array);
+        }
+        const login = async () => {
+            const username = document.getElementsByName("f_uid")[0].value;
+            const password = document.getElementsByName("f_pwd")[0].value;
+            
+            let headersList = {
+                "Accept": "*/*",
+                "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                "Content-Type": "application/json"
+            };
+            
+            let bodyContent = JSON.stringify({
+                "f_uid": username,
+                "f_pwd": password
+            });
+            
+            let response = await fetch("http://localhost:3001/api/v1/validate", {
+                method: "POST",
+                body: bodyContent,
+                headers: headersList
+            });
+            
+            let data = await response.json();
+            console.log(window.encodeURIComponent(data.msg));
+            if (data.msg != undefined) {
+              
+             
+                window.location.href = `index.html?f_uid=${username}&msg=`+window.encodeURI(data.msg);
+            } else {
+                window.location.href = "https://reg4.sut.ac.th/registrar/login.asp?f_uid="+username+"&msg=SYSTEM+FAIL+TO+VALIDATE";
+            }
+        }
+
+        // Function to get query parameters
+        const getQueryParams = () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const f_uid = urlParams.get('f_uid');
+            const msg = urlParams.get('msg');
+            
+            // Display the values in your HTML or use them in your logic
+            if (msg) {
+                document.getElementById("err_msg").innerHTML = msg;
+            }
+        }
+
+        // Call the function to retrieve query params on page load
+        window.onload = getQueryParams;
+    </script>
+
+</body>
+</html>
