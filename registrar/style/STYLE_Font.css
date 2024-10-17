@@ -1,0 +1,601 @@
+
+html, body {
+	margin: 1px;
+	padding:0px;
+	background:#FFFFFF;
+	background-image:url(bg.gif);
+	background-position:left;
+	background-repeat: repeat-x;
+	background-attachment : fixed;
+}
+
+/*--------------Code CSS conner--------------*/
+*.rtop *,.rbottom *{display:block;height:1px;overflow: hidden;}
+.r1,.r2,.r3,.r4,.r5,.r6{height:1px;font-size:0;}
+.r7,.r8{height:2px; font-size:0;}
+.r1{margin:0 10px;}
+.r2{margin:0 8px;}
+.r3{margin:0 6px;}
+.r4{margin:0 5px;}
+.r5{margin:0 4px;}
+.r6{margin:0 3px;}
+.r7{margin:0 2px;}
+.r8{margin:0 1px;}
+
+.r1{background-color:#590059;} 
+.r2,.r3{
+background-color:#590059;
+border-left:2px solid #590059; 
+border-right:2px solid #590059;
+}
+.r4,.r5,.r6,.r7,.r8{
+background-color:#590059;
+border-left:1px solid #590059; 
+border-right:1px solid #590059;
+}
+.contentconner{
+border-left:1px solid #590059;
+border-right:1px solid #590059; 
+border-width:0px 1px;
+margin:0px;
+padding: 0px 20px; 
+display:block;
+}
+
+h1, h2, h3, h4, h5, h6, p, form {
+	margin: 0px;
+	padding:0px;
+	font-family: "tahoma";
+	text-align:left;
+	font-size:25px;
+	font-weight: bold;
+}
+
+#wrapper {
+	width:930px;
+	margin:0px auto;
+	background-color:#FFF;
+}
+
+#content {
+	width:100%;
+	margin:0px auto;
+	border:1px;
+	/*background-image:url(bg_header_top.gif);*/
+	background-repeat:no-repeat;
+	background-position:top;
+}
+
+#header {
+	width:100%;
+	height:96px;
+	background-image:url(HeadMenu.jpg);
+	background-repeat: no-repeat;
+	/*border-left:1px solid #ffffff; 
+	border-right:1px solid #ffffff;*/
+}
+
+#footer {
+	width: 100%;
+	margin: 0 auto;
+	background: url(img3.gif) repeat-y;
+
+}
+
+#page {
+	width: 100%;
+	/*height: 600;*/
+	margin: 0px auto;
+	background: url(img3.gif) repeat-y;
+}
+
+#sidebar {
+	width: 200px;
+	padding-left: 1px;
+}
+
+#detail {
+	float: right;
+	width: 727px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+.style1 {
+	font-family: "Microsoft Sans Serif";
+	font-size:13px;
+	color: #FFFFFF;
+}
+.style2 {color: #000000}
+a:link {
+	color: #006699;
+}
+a:visited {
+	color: #006699;
+}
+a:hover {
+	color: #996600;
+}
+a:active {
+	color: #006699;
+}
+.style3 {
+	font-family: "Microsoft Sans Serif";
+	font-size:13px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.langtitle {
+	font-family: "tahoma";
+	font-size:12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+/* ######################################## DEFATULT ###############################################*/
+
+/* ---- ตัวอักษรเมนู ---- */
+.style4 {
+	font: bold .72em "tahoma";
+	color: #FFFFFF;
+}
+/* ตัวอักษรเมนู FOOTER */
+.footermenu {
+	font-family: "tahoma";
+	font-size:12px;
+}
+
+/* ชื่อเรื่องแต่ละหน้า*/
+.pagename {
+	font-family: "tahoma";
+	font-size:18px;
+	font-weight: bold;
+	color:#FF8000;
+}
+/* ตัวอักษรแสดงชื่อ Login*/
+.username {
+	font-family: "tahoma";
+	font-size:14px;
+	font-weight: bold;
+	color: #000000;
+}
+/* ตัวอักษรหัวเรื่องทั่วไป*/
+.HeaderDetail {
+	font-family: "tahoma";
+	font-size:12px;
+	font-weight: bold;
+	color: #000000;
+}
+/* ตัวอักษรหัวเรื่องของตาราง*/
+.tableHeaderDetail {
+	font-family: "tahoma";
+	font-size:12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/* ตัวอักษรขนาดปกติ*/
+.normalDetail {
+	font-family: "tahoma";
+	font-size:11px;
+	color: #000000;
+}
+/* ข้อความ ล่างสุดของ หน้า*/
+.footertext {
+	font-family: "tahoma";
+	font-size:10px;
+	font-weight: bold;
+	color: #ffffff;
+}
+/* ######################################## END DEFATULT ###############################################*/
+
+
+/* ######################################## CUSTOM PAGE ###############################################*/
+
+/* ## แสดงข่าวประกาศ ##*/
+
+/* หัวเรื่องข่าวประกาศ*/
+		.Mainheadermsg {
+			font-family: "tahoma";
+			font-size:14px;
+			font-weight: bold;
+			color: #ffffff;
+		}
+		/* หัวเรื่องย่อยข่าวประกาศ*/
+		.subMainheadermsg {
+			font-family: "tahoma";
+			font-size:13px;
+			font-weight: bold;
+			color: #000080;
+		}
+		/* รายละเอียดข่าวประกาศ*/
+		.Detailmsg {
+			font-family: "tahoma";
+			font-size:13px;
+			color: #000000;
+		}
+
+		/* หัวเรื่อง เมื่อข่าวประกาศ ว่าง*/
+		.isnullmsg {
+			font-family: "tahoma";
+			font-size:16px;
+			color: #FF8000;
+		}
+/* ## END แสดงข่าวประกาศ ##*/
+
+/* ## ประวัติเข้าใช้ระบบ ##*/
+
+		/* ตัวอักษรแสดงหน้า Log Login*/
+		.logdetail {
+			font-family: "tahoma";
+			font-size:11px;
+			color: #000000;
+		}
+
+/* ## END ประวัติเข้าใช้ระบบ ##*/
+
+/* ## หน้าแสดงทุน ##*/
+
+		/* ตัวอักษรหัวเรื่องของตาราง หน้า ภาระค่าใช้จ่ายทุน*/
+		.tableHeaderDetailDep {
+			font-family: "tahoma";
+			font-size:11px;
+			color: #FFFFFF;
+			font-weight: bold;
+			
+		}
+		/* ตัวอักษรขนาดปกติ หน้า ภาระค่าใช้จ่ายทุน*/
+		.normalDetaildep {
+			font-family: "tahoma";
+			font-size:11px;
+			color: #000000;
+		}
+
+/* ## END หน้าแสดงทุน ##*/
+
+/* ## หน้าแสดง ถามตอบ ##*/
+
+		/* ตัวอักษรขนาดปกติหน้าถามตอบ*/
+		.feednormalDetail {
+			font-family: "tahoma";
+			font-size:12px;
+			color: #000000;
+		}
+
+/* ## END หน้าแสดง ถามตอบ ##*/
+
+/* ## หน้าแสดง ประวัตินักศึกษา ##*/
+
+		/* ตัวอักษรหัวเรื่องของหัวตารางประวัตินักศึกษา*/
+		.bibioheader {
+			font-family: "tahoma";
+			font-size:14px;
+			color: #FFFFFF;
+			font-weight: bold;
+		}
+		/* ตัวอักษร Caption ประวัตินักศึกษา*/
+		.bibiocaption {
+			font-family: "tahoma";
+			font-size:13px;
+			color: #000000;
+		}
+		/* ตัวอักษรแสดงประวัตินักศึกษา*/
+		.bibioDetail {
+			font-family: "tahoma";
+			font-size:13px;
+			color: #0000CC;
+		}
+/* ตัวอักษรพิมพ์ใบแจ้งยอดชำระเงิน*/
+.print {
+	font-family: "tahoma";
+	font-size:15px;
+	font-weight: bold;
+	color: #0000FF;
+}
+
+
+
+/* ------------------------------------------------- แสดงตารางเรียน ---------------------------------------   */
+
+/* ตัวอักษรแสดงวัน หัวตาราง*/
+.timeheader {
+	font-family: "tahoma";
+	font-size:11px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/* ตัวอักษรแสดงวัน หัวตาราง*/
+.timedetail {
+	font-family: "tahoma";
+	font-size:11px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+/* ------------------------------------------------- ตรวจสอบจบ  ---------------------------------------   */
+
+/* ตัวอักษรแสดงราละเอียดปกติ*/
+.g_normalDetail {
+	font-family: "tahoma";
+	font-size:12px;
+	color: #000000;
+}
+
+/* ------------------------------------------------- บันทึกเกรด  ---------------------------------------   */
+
+/* ตัวอักษรแสดง List รายชื่อ นศ ในหน้าบันทึกเกรด*/
+.grade_normalDetail {
+	font-family: "tahoma";
+	font-size:12px;
+	color: #000000;
+}
+/* ตัวอักษร headertable นหน้าบันทึกคะแนน*/
+.grade_tablenormalDetail {
+	font-family: "tahoma";
+	font-size:11px;
+	color: #000000;
+	font-weight: bold;
+}
+
+/* ตัวอักษรแสดง สาถนะค้างชำระ นหน้าบันทึกคะแนน*/
+.grade_debit {
+	font-family: "tahoma";
+	font-size:12px;
+	color: #FF0000;
+}
+/* ตัวอักษร headertableEdit นหน้าบันทึกคะแนน*/
+.grade_tablenormalDetailEdit {
+	font-family: "tahoma";
+	font-size:11px;
+	color: #000000;
+	margin: 0px;
+	padding:0px;
+	
+}
+/* ตัวอักษรแสดงหัวเรื่องกราฟของเกรด*/
+.graph_HDetail {
+	font-family: "tahoma";
+	font-size:10px;
+	color: #000000;
+}
+/* ตัวอักษรแสดงกราฟของเกรด*/
+.graph_Detail {
+	font-family: "tahoma";
+	font-size:10px;
+	color: #000000;
+}
+.styleMARQUEE {
+	font-family: "tahoma";
+	font-size:12px;
+	/*font-weight: bold;*/
+	color: #000000;
+}
+/* -------------------------------------------------------------------------------------------------------   */
+
+/* ------------------------------------------------- สถิติการศึกษา ---------------------------------------   */
+
+/* ตัวอักษรแสดง fontปกติ 1. สถิตินักศึกษา */
+.stat1_normalDetail {
+	font-family: "tahoma";
+	font-size:13px;	
+}
+/* ตัวอักษรแสดง fontปกติ 2. สถิติการลงทะเบียน */
+.stat2_normalDetail {
+	font-family: "tahoma";
+	font-size:13px;
+}
+/* ตัวอักษรแสดง fontปกติ 3. สถิติการสอน */
+.stat3_normalDetail {
+	font-family: "tahoma";
+	font-size:13px;
+}
+
+/* -------------------------------------------------------------------------------------------------------   */
+
+.Hpage {
+	font-family: "tahoma";
+	font-size:16px;
+	font-weight: bold;
+	color: #000080;
+}
+.Htitle {
+	font-family: "tahoma";
+	font-size:22px;
+	font-weight: bold;
+	color: #000000;
+}
+.Htitle2 {
+	font-family: "tahoma";
+	font-size:12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.Htext {
+	font-family: "tahoma";
+	font-size:12px;
+	color: #000000;
+}
+.Htcolumn {
+	font-family: "tahoma";
+	font-size:12px;
+	font-weight: bold;
+	color: #FFFFFF;
+    background-color:#383880;
+}
+.Htcolumn2 {
+	font-family: "tahoma";
+	font-size:12px;
+	font-weight: bold;
+	color: #FFFFFF;
+    background-color:#808080;
+}
+
+/* =-=-=-=-=-=-=-[Menu One]-=-=-=-=-=-=-=- */
+	
+#menu {
+width:200px;
+}
+
+#menu ul {
+	margin: 1px;
+	padding: 1px;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	padding: 5px 15px;
+	border-bottom: 1px solid #FFFFFF;
+	text-decoration: none;
+	text-align:left;
+	color: #292d2e;
+}
+
+#menu a:hover {
+	background: #2d3132;
+	color: #FFFFFF;
+}
+
+#menu .active a {
+	background: #BABABA;
+	color: #000000;
+}
+
+
+/* Boxed Style */
+
+.boxed {
+}
+
+.boxed .title {
+
+	display: block;
+	padding: 6px 15px;
+	background: #3B3B3B;
+	border-left: 1px;
+	border-top: 1px;
+	text-decoration: none;
+	font: bold .80em "tahoma";
+	color: #FFFFFF;
+}
+
+.boxed .content {
+	padding: 15px;
+}
+
+.boxed ul {
+	list-style: none;
+}
+
+/* ----------- My Form ----------- */
+.myform{
+margin:0px auto;
+width:400px;
+padding:14px;
+}
+
+/* ----------- stylized ----------- */
+.spacer{clear:both; height:1px;}
+#stylized{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+}
+#stylized h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+border-bottom:solid 1px #b7ddf2;
+padding-bottom:10px;
+}
+#stylized label{
+font: bold .77em "tahoma";
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+#stylized .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+#stylized input{
+float:left;
+font-size:12px;
+font-weight:bold;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:200px;
+margin:2px 0px 20px 10px;
+}
+#stylized button{
+font-size:12px;
+font-weight:bold;
+padding:4px 2px;
+border:solid 1px #3B3B3B;
+width:150px;
+margin:2px 0px 20px 10px;
+}
+
+
+.container {
+		
+		clear:both;
+        width: 100%;
+        padding: 0px;
+        margin: 0px 0 0px 0;
+        border: 0px solid #ccc;
+		background-color:#3B3B3B;
+        float:left;
+}
+
+/* circle */
+#navCircle {
+        margin: 0;
+        padding: 0 0 0px 10px;
+        border-bottom: 1px solid #9FB1BC;
+		border-top: 1px solid #9FB1BC;	
+}
+
+#navCircle li {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        list-style-type: none;
+		
+		
+}
+
+#navCircle a:link, #navCircle a:visited {
+        float: right;
+        font-size: 13px;
+		font-family: "tahoma";
+        line-height: 14px;
+        font-weight: bold;
+        padding: 2 0px 3px 0px;
+        text-decoration: none;
+        color: #708491;
+		
+}
+
+
+#navCircle a:link.active, #navCircle a:visited.active, #navCircle a:hover {
+		
+		padding-bottom: 3px;
+        color: #fff;
+		font-weight: bold;
+		font-size: 11px;
+		background: no-repeat bottom center;
+		
+}

@@ -1,0 +1,243 @@
+H4
+{	
+	FONT-FAMILY : "MS Sans Serif";
+}
+
+TR.detail
+{
+ 	FONT-FAMILY : "MS Sans Serif";
+ 	FONT-SIZE: 9;
+}
+
+TR.header
+{
+ 	FONT-FAMILY : "MS Sans Serif";
+ 	FONT-SIZE: 12PT;
+}
+
+TD
+{	
+	FONT-FAMILY : "MS Sans Serif";
+}
+
+A:link
+{		
+	COLOR: #000090;
+    	FONT-WEIGHT: bold;
+    	TEXT-DECORATION: none;
+    	FONT-FAMILY : "MS Sans Serif";
+}
+A:visited
+{	
+	COLOR: #000090;
+    	FONT-WEIGHT: bold;
+    	TEXT-DECORATION: none;
+    	FONT-FAMILY : "MS Sans Serif";
+}
+A:hover
+{		
+	COLOR: red;
+    	FONT-WEIGHT: bold;
+    	TEXT-DECORATION: none;
+    	FONT-FAMILY : "MS Sans Serif";
+}
+
+INPUT.right
+{
+	TEXT-ALIGN: RIGHT;
+}
+
+a.Button {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c0c0c0;
+  color: #000000;
+  width:100px;
+  font-family: "MS Sans Serif", Arial, Tahoma, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+  padding: 2px;
+  padding-left: 6px; 
+  padding-right: 6px;
+  position: relative;
+  text-decoration: none;
+}
+
+a.Button:hover {
+  border-color: #f0f0f0 #505050 #505050 #f0f0f0;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  font-family: "MS Sans Serif", Arial, Tahoma, sans-serif;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+  padding: 2px;
+  padding-left: 6px; 
+  padding-right: 6px;
+  position: relative;
+}
+a.Button2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c0c0c0;
+  color: #000000;
+  width:70px;
+  background:#FFFFFF;
+  font-family: "MS Sans Serif", Arial, Tahoma, sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  padding: 2px;
+  padding-left: 6px; 
+  padding-right: 6px;
+  position: relative;
+  text-decoration: none;
+}
+
+a.Button2:hover {
+  border-color: #f0f0f0 #505050 #505050 #f0f0f0;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  color: red;
+  font-family: "MS Sans Serif", Arial, Tahoma, sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  padding: 2px;
+  padding-left: 6px; 
+  padding-right: 6px;
+  position: relative;
+}
+a.ButtonFalse {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c0c0c0;
+  color: #000000;
+  width:70px;
+  background:#FFFFFF;
+  font-family: "MS Sans Serif", Arial, Tahoma, sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  padding: 2px;
+  padding-left: 6px; 
+  padding-right: 6px;
+  position: relative;
+  text-decoration: none;
+}
+
+a.ButtonFalse:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c0c0c0;
+  color: #000000;
+  width:70px;
+  background:#FFFFFF;
+  font-family: "MS Sans Serif", Arial, Tahoma, sans-serif;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  padding: 2px;
+  padding-left: 6px; 
+  padding-right: 6px;
+  position: relative;
+  text-decoration: none;
+}
+.styled-select {
+   background: url(15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+
+.styled-select.slate {
+   background: url(2e3ybe1.jpg) no-repeat right center;
+   height: 34px;
+   width: 350px;
+}
+
+.styled-select.slate select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 450px;
+}
+.slate   { background-color: #ddd; }
+.slate select   { color: #000; }
+
+
+button {
+  background: none;
+
+  border: 0;
+  box-sizing: border-box;
+  margin: 0.5em;
+ /* padding: 1em 2em;*/
+
+  
+
+  color: #f45e61;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+   cursor: pointer;
+}
+button::before, button::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+    background-color: Transparent;
+}
+
+.draw {
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+  background-color: Transparent !important;
+}
+.draw::before, .draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #60daaa;
+}
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #60daaa;
+  border-left-color: #60daaa;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
